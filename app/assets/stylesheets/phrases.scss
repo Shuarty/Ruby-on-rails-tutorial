@@ -1,0 +1,18 @@
+// Place all the styles related to the phrases controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.field-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+
+  & > .actions {
+    display: flex;
+    justify-content: center;
+
+    & > input {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+}
