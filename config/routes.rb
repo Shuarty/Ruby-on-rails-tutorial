@@ -1,7 +1,10 @@
 # routes
 Rails.application.routes.draw do
+  devise_for :users
   get 'static_pages/hello'
 
+  resources :users, only: [:show, :index]
+ 
   root 'phrases#index'
   post '/phrases' => 'phrases#create'
   get '/phrases/new' => 'phrases#new'
