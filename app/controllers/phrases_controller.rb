@@ -1,7 +1,7 @@
 # phrases controller
 class PhrasesController < ApplicationController
   def index
-    @phrases = Phrase.paginate(page: params[:page])
+    @phrases = Phrase.paginate(page: params[:page], per_page: 10)
   end
 
   def new
